@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See The World Differently</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="brand-mark">◉</span>
+          <div>
+            <p class="eyebrow">Inclusive Design Studio</p>
+            <h1>See The World Differently</h1>
+          </div>
+        </div>
+        <nav class="topnav">
+          <a href="#experience">Experience</a>
+          <a href="#journey">Journey</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="experience">
+          <div class="hero-copy">
+            <p class="tag">Realistic 3D perspective</p>
+            <h2>Explore everyday life through different kinds of access.</h2>
+            <p class="lead">
+              This interactive demo shows how people with disabilities experience the world through a character lens — from easy routines to more difficult real-life challenges.
+            </p>
+            <div class="cta-row">
+              <button class="primary-btn" data-scene-trigger="0">Start the journey</button>
+              <button class="ghost-btn" data-mode-toggle>Toggle perspective</button>
+            </div>
+            <div class="stat-row">
+              <div>
+                <strong>5</strong>
+                <span>characters</span>
+              </div>
+              <div>
+                <strong>4</strong>
+                <span>difficulty stages</span>
+              </div>
+              <div>
+                <strong>Daily life</strong>
+                <span>real scenarios</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stage">
+            <div class="scene-panel">
+              <div class="scene-topbar">
+                <span class="dot red"></span>
+                <span class="dot amber"></span>
+                <span class="dot green"></span>
+              </div>
+
+              <div id="scene" class="scene scene-kitchen">
+                <div class="sun-glow"></div>
+                <div class="world-3d">
+                  <div class="floor-grid"></div>
+                  <div class="obstacle obstacle-table"></div>
+                  <div class="obstacle obstacle-stool"></div>
+                  <div class="obstacle obstacle-shelf"></div>
+                  <div class="obstacle obstacle-barrier"></div>
+                  <div class="obstacle obstacle-bus"></div>
+                  <div class="obstacle obstacle-stairs"></div>
+                </div>
+
+                <div class="character-wrap">
+                  <div class="character avatar low-vision">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm arm-left"></div>
+                    <div class="arm arm-right"></div>
+                    <div class="leg leg-left"></div>
+                    <div class="leg leg-right"></div>
+                    <div class="vision-ring"></div>
+                    <div class="sound-wave"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience-panel" id="journey">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Character selector</p>
+              <h3>Who is viewing the world?</h3>
+            </div>
+            <div class="difficulty-pill" id="difficultyBadge">Easy</div>
+          </div>
+
+          <div class="selector-row" id="characterButtons">
+            <button class="character-button is-active" data-character="ava">
+              <span class="avatar-dot low"></span>
+              Ava
+            </button>
+            <button class="character-button" data-character="marcus">
+              <span class="avatar-dot mobility"></span>
+              Marcus
+            </button>
+            <button class="character-button" data-character="sofia">
+              <span class="avatar-dot blind"></span>
+              Sofia
+            </button>
+            <button class="character-button" data-character="leo">
+              <span class="avatar-dot deaf"></span>
+              Leo
+            </button>
+            <button class="character-button" data-character="you">
+              <span class="avatar-dot custom"></span>
+              You
+            </button>
+          </div>
+
+          <div class="info-grid">
+            <div class="story-card scene-overview">
+              <p class="eyebrow">Current moment</p>
+              <h4 id="sceneName">Morning kitchen</h4>
+              <p id="sceneDescription">
+                Ava wakes up and moves through her apartment, using high contrast, clear spacing, and familiar routes to stay steady and comfortable.
+              </p>
+            </div>
+
+            <div class="story-card">
+              <p class="eyebrow">Perception</p>
+              <h4 id="perceptionLabel">Low vision</h4>
+              <ul id="focusList">
+                <li>High contrast edges</li>
+                <li>Clear walking path</li>
+                <li>Well-lit task zones</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey-section" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">Difficulty ladder</p>
+            <h3>Everyday life, from easy to hard</h3>
+          </div>
+
+          <div class="timeline" id="timeline"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
